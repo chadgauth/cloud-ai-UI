@@ -1,0 +1,1 @@
+{"version":3,"file":"notebook-type-registry.d.ts","sourceRoot":"","sources":["../../src/browser/notebook-type-registry.ts"],"names":[],"mappings":"AAeA,OAAO,EAAE,UAAU,EAAE,MAAM,aAAa,CAAC;AAEzC,OAAO,EAAE,sBAAsB,EAAE,MAAM,6BAA6B,CAAC;AAErE,qBACa,oBAAoB;IAC7B,QAAQ,CAAC,aAAa,EAAE,sBAAsB,EAAE,CAAM;IAEtD,oBAAoB,CAAC,IAAI,EAAE,sBAAsB,GAAG,UAAU;CAMjE"}

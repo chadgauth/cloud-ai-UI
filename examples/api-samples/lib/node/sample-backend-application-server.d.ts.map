@@ -1,0 +1,1 @@
+{"version":3,"file":"sample-backend-application-server.d.ts","sourceRoot":"","sources":["../../src/node/sample-backend-application-server.ts"],"names":[],"mappings":";AAiBA,OAAO,EAAE,wBAAwB,EAAE,MAAM,sBAAsB,CAAC;AAChE,OAAO,OAAO,GAAG,QAAQ,4BAA4B,CAAC,CAAC;AAEvD,qBACa,8BAA+B,YAAW,wBAAwB;IAE3E,SAAS,CAAC,GAAG,EAAE,OAAO,CAAC,WAAW,GAAG,IAAI;CAK5C"}

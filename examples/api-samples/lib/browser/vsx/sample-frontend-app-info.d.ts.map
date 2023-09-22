@@ -1,0 +1,1 @@
+{"version":3,"file":"sample-frontend-app-info.d.ts","sourceRoot":"","sources":["../../../src/browser/vsx/sample-frontend-app-info.ts"],"names":[],"mappings":"AAiBA,OAAO,EAAc,UAAU,EAAE,MAAM,8BAA8B,CAAC;AACtE,OAAO,EAAE,aAAa,EAAE,MAAM,kCAAkC,CAAC;AAEjE,qBACa,qBAAsB,YAAW,aAAa;IAEjD,aAAa,IAAI,OAAO,CAAC,MAAM,CAAC;CAGzC;AAED,wBAAgB,iBAAiB,CAAC,IAAI,EAAE,UAAU,CAAC,IAAI,GAAG,IAAI,CAE7D"}
