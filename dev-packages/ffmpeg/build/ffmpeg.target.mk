@@ -13,6 +13,8 @@ DEFS_Debug := \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
+	'-DOPENSSL_NO_PINSHARED' \
+	'-DOPENSSL_THREADS' \
 	'-DNAPI_VERSION=2' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
@@ -24,7 +26,7 @@ CFLAGS_Debug := \
 	-O0 \
 	-gdwarf-2 \
 	-mmacosx-version-min=10.15 \
-	-arch x86_64 \
+	-arch arm64 \
 	-Wall \
 	-Wendif-labels \
 	-W \
@@ -49,13 +51,13 @@ CFLAGS_OBJC_Debug :=
 CFLAGS_OBJCC_Debug :=
 
 INCS_Debug := \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/include/node \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/src \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/openssl/config \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/openssl/openssl/include \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/uv/include \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/zlib \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/v8/include
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/include/node \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/src \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/openssl/config \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/openssl/openssl/include \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/uv/include \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/zlib \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=ffmpeg' \
@@ -68,6 +70,8 @@ DEFS_Release := \
 	'-D_DARWIN_USE_64_BIT_INODE=1' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
+	'-DOPENSSL_NO_PINSHARED' \
+	'-DOPENSSL_THREADS' \
 	'-DNAPI_VERSION=2' \
 	'-DBUILDING_NODE_EXTENSION'
 
@@ -75,9 +79,8 @@ DEFS_Release := \
 CFLAGS_Release := \
 	-O3 \
 	-gdwarf-2 \
-	-flto \
 	-mmacosx-version-min=10.15 \
-	-arch x86_64 \
+	-arch arm64 \
 	-Wall \
 	-Wendif-labels \
 	-W \
@@ -102,13 +105,13 @@ CFLAGS_OBJC_Release :=
 CFLAGS_OBJCC_Release :=
 
 INCS_Release := \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/include/node \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/src \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/openssl/config \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/openssl/openssl/include \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/uv/include \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/zlib \
-	-I/Users/jeremywang/Library/Caches/node-gyp/20.5.1/deps/v8/include
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/include/node \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/src \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/openssl/config \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/openssl/openssl/include \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/uv/include \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/zlib \
+	-I/Users/chadgauthier/Library/Caches/node-gyp/18.18.0/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/native/ffmpeg.o \
@@ -144,7 +147,7 @@ LDFLAGS_Debug := \
 	-undefined dynamic_lookup \
 	-Wl,-search_paths_first \
 	-mmacosx-version-min=10.15 \
-	-arch x86_64 \
+	-arch arm64 \
 	-L$(builddir) \
 	-stdlib=libc++
 
@@ -156,7 +159,7 @@ LDFLAGS_Release := \
 	-undefined dynamic_lookup \
 	-Wl,-search_paths_first \
 	-mmacosx-version-min=10.15 \
-	-arch x86_64 \
+	-arch arm64 \
 	-L$(builddir) \
 	-stdlib=libc++
 

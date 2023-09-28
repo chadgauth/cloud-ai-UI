@@ -1,1 +1,8 @@
 node_modules
+.browser_modules
+lib
+*.log
+*-app/*
+!*-app/package.json
+.yarn
+.vscode

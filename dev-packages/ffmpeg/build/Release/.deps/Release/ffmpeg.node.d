@@ -1,1 +1,1 @@
-cmd_Release/ffmpeg.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.15 -arch x86_64 -L./Release -stdlib=libc++  -o Release/ffmpeg.node Release/obj.target/ffmpeg/native/ffmpeg.o Release/obj.target/ffmpeg/native/mac-ffmpeg.o 
+cmd_Release/ffmpeg.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.15 -arch arm64 -L./Release -stdlib=libc++  -o Release/ffmpeg.node Release/obj.target/ffmpeg/native/ffmpeg.o Release/obj.target/ffmpeg/native/mac-ffmpeg.o 

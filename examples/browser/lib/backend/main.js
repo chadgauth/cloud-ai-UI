@@ -1355,9 +1355,9 @@ exports.SampleMockOpenVsxServer = SampleMockOpenVsxServer;
 
 /***/ }),
 
-/***/ "./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/bindings.js":
+/***/ "./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/bindings.js":
 /*!**********************************************************************************!*\
-  !*** ./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/bindings.js ***!
+  !*** ./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/bindings.js ***!
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1370,9 +1370,9 @@ module.exports = function (jsModule) {
 
 /***/ }),
 
-/***/ "./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/ripgrep.js":
+/***/ "./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/ripgrep.js":
 /*!*********************************************************************************!*\
-  !*** ./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/ripgrep.js ***!
+  !*** ./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/ripgrep.js ***!
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -5567,7 +5567,7 @@ exports.FileSearchServiceImpl = void 0;
 const cp = __webpack_require__(/*! child_process */ "child_process");
 const fuzzy = __webpack_require__(/*! @theia/core/shared/fuzzy */ "../../packages/core/shared/fuzzy/index.js");
 const readline = __webpack_require__(/*! readline */ "readline");
-const ripgrep_1 = __webpack_require__(/*! @vscode/ripgrep */ "./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/ripgrep.js");
+const ripgrep_1 = __webpack_require__(/*! @vscode/ripgrep */ "./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/ripgrep.js");
 const inversify_1 = __webpack_require__(/*! @theia/core/shared/inversify */ "../../packages/core/shared/inversify/index.js");
 const uri_1 = __webpack_require__(/*! @theia/core/lib/common/uri */ "../../packages/core/lib/common/uri.js");
 const file_uri_1 = __webpack_require__(/*! @theia/core/lib/node/file-uri */ "../../packages/core/lib/node/file-uri.js");
@@ -21772,7 +21772,7 @@ const inversify_1 = __webpack_require__(/*! @theia/core/shared/inversify */ "../
 const common_1 = __webpack_require__(/*! @theia/core/lib/common */ "../../packages/core/lib/common/index.js");
 const search_in_workspace_interface_1 = __webpack_require__(/*! ../common/search-in-workspace-interface */ "../../packages/search-in-workspace/lib/common/search-in-workspace-interface.js");
 const ripgrep_search_in_workspace_server_1 = __webpack_require__(/*! ./ripgrep-search-in-workspace-server */ "../../packages/search-in-workspace/lib/node/ripgrep-search-in-workspace-server.js");
-const ripgrep_1 = __webpack_require__(/*! @vscode/ripgrep */ "./lib/backend/native-webpack-plugin/2023822-45938-4nuat4.j4gr5/ripgrep.js");
+const ripgrep_1 = __webpack_require__(/*! @vscode/ripgrep */ "./lib/backend/native-webpack-plugin/2023828-79878-1x8u67v.xvfx/ripgrep.js");
 exports["default"] = new inversify_1.ContainerModule(bind => {
     bind(search_in_workspace_interface_1.SearchInWorkspaceServer).to(ripgrep_search_in_workspace_server_1.RipgrepSearchInWorkspaceServer);
     bind(common_1.ConnectionHandler).toDynamicValue(ctx => new common_1.RpcConnectionHandler(search_in_workspace_interface_1.SIW_WS_PATH, client => {
